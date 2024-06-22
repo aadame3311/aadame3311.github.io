@@ -44,26 +44,30 @@
             font-size: 2em;
             margin-bottom: 20px;
         }
-        .projects .project {
+        .projects .project, .work-experience .job, .blog .post {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        .projects .project img {
+        .projects .project img, .work-experience .job img {
             width: 100px;
             height: 100px;
             object-fit: cover;
             margin-right: 20px;
         }
-        .projects .project .description {
+        .projects .project .description, .work-experience .job .details, .blog .post .details {
             flex: 1;
         }
+        .blog .post a {
+            text-decoration: none;
+            color: #333;
+        }
         @media (max-width: 768px) {
-            .projects .project {
+            .projects .project, .work-experience .job, .blog .post {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            .projects .project img {
+            .projects .project img, .work-experience .job img {
                 margin-bottom: 10px;
             }
         }
@@ -86,6 +90,19 @@
             </p>
         </section>
 
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <img src="company-logo.jpg" alt="Company Logo">
+                <div class="details">
+                    <h3>Senior Software Engineer at HackerRank</h3>
+                    <p>July 2021 - July 2023</p>
+                    <p>Developed and maintained platform integration APIs, significantly improving the efficiency and scalability of our systems. Worked closely with cross-functional teams to design and implement innovative solutions to complex problems.</p>
+                </div>
+            </div>
+            <!-- Add more jobs as needed -->
+        </section>
+
         <section class="projects">
             <h2>Recent projects</h2>
             <div class="project">
@@ -103,6 +120,17 @@
                 </div>
             </div>
             <!-- Add more projects as needed -->
+        </section>
+
+        <section class="blog">
+            <h2>Blog</h2>
+            <div class="post">
+                <div class="details">
+                    <h3><a href="blog1.html">Blog Title 1</a></h3>
+                    <p>A short description of the blog post content.</p>
+                </div>
+            </div>
+            <!-- Add more blog posts as needed -->
         </section>
     </div>
 </body>
