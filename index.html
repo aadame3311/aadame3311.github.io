@@ -1,1 +1,109 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Adame Puente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+        }
+        header h2 {
+            font-size: 1.5em;
+            color: #777;
+        }
+        section {
+            margin: 50px 0;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .projects .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .projects .project img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .projects .project .description {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .projects .project {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .projects .project img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="your-picture.jpg" alt="Antonio Adame Puente">
+            <h1>Antonio Adame Puente</h1>
+            <h2>Senior Software Engineer at HackerRank | Building Platform Integration APIs</h2>
+        </header>
+
+        <section>
+            <h2>About me</h2>
+            <p>
+                I am a dedicated software engineer with extensive experience in building robust and scalable APIs for platform integration. 
+                My professional journey has taken me through various challenging and rewarding projects, where I honed my skills in problem-solving and innovation. 
+                In my free time, I enjoy hiking, playing guitar, and exploring new technologies.
+            </p>
+        </section>
+
+        <section class="projects">
+            <h2>Recent projects</h2>
+            <div class="project">
+                <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+                <div class="description">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of the project and its key features. Explain what you did and what technologies were used.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+                <div class="description">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of the project and its key features. Explain what you did and what technologies were used.</p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+    </div>
+</body>
+</html>
